@@ -1,0 +1,85 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+
+}
+
+/* :root{
+    --hue--neutral:200;
+    --hue--wrong:0;
+    --hue--correct:145;
+} */
+body{
+    --hue : var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color:#007ACC;
+ 
+    
+}
+
+.btn, #questions{
+    font-size: 40px;
+}
+
+body.correct{
+    background-color: #0DC242;
+}
+
+body.wrong{
+    background-color: #C53039;
+}
+
+.container1{
+    width: 800px;
+    max-width: 80%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn{
+    border: 1px solid #002;
+    background-color:hsl(200, 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: white;
+    outline: none;
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+
+.btn.correct{
+    background-color: #0DC242;
+}
+
+.btn.wrong{
+    background-color: #C53039;
+}
+
+.start-btn, .next-btn{
+    
+    font-weight: bold;
+    padding: 20px 30px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
